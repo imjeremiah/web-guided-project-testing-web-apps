@@ -43,7 +43,7 @@ test("when user fills out all animal form inputs and submits, displays species",
     // expect(output).toBeTruthy();
     // expect(output).not.toBeNull();
 
-    // // Find with Promise
+    // Find with Promise
     // const outputPromise = screen.findByText(input);
     // outputPromise.then(output=> {
     //     expect(output).toBeInTheDocument();
@@ -53,7 +53,6 @@ test("when user fills out all animal form inputs and submits, displays species",
 
     // Find with async / await way
     const output = await screen.findByText(input);
-    console.log(output);
     expect(output).toBeInTheDocument();
     expect(output).toBeTruthy();
     expect(output).not.toBeNull();
