@@ -22,7 +22,10 @@ const AnimalForm = ({ errors, touched, values }) => {
       ...animal,
       id: Date.now()
     };
-    setAnimals([...animals, newAnimal]);
+
+    setTimeout(()=> {
+      setAnimals([...animals, newAnimal]);
+    }, 3000);
   };
 
   return (
