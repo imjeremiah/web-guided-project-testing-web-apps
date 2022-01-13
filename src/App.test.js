@@ -2,6 +2,9 @@
 
 
 test("Make sure things are work 1", ()=> {
+    const a = 1;
+    const a;
+    
     console.log("test 1 stuff");
 });
 
