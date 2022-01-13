@@ -11,11 +11,13 @@ test("when user fills out all animal form inputs and submits, displays species",
     //Arrange: render AnimalForm
     render(<AnimalForm/>);
 
+    const input = "feline";
+
     //Act: Do a complete submission.
     //  1. Select the species input.
     //  2. Type in our species.
     const species = screen.getByLabelText(/species:/i);
-    userEvent.type(species, "feline");
+    userEvent.type(species, input);
 
     //  3. Select the age input.
     //  4. Type in our age.
@@ -33,7 +35,7 @@ test("when user fills out all animal form inputs and submits, displays species",
 
     //Assert: 
     //Shows our species name in current animals list.
-    const output = screen.queryByText("fie");
+    const output = screen.queryByText(input);
 
     expect(output).toBeInTheDocument();
     expect(output).toBeTruthy();
