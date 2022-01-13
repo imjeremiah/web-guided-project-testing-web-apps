@@ -46,6 +46,11 @@ test("when user fills out all animal form inputs and submits, displays species",
     // Find with Promise
     const outputPromise = screen.findByText(input);
     outputPromise.then(output=> {
-        console.log(output);
+        expect(output).toBeInTheDocument();
+        expect(output).toBeTruthy();
+        expect(output).not.toBeNull();
     });
+
+
+    
 });
