@@ -35,9 +35,15 @@ test("when user fills out all animal form inputs and submits, displays species",
 
     //Assert: 
     //Shows our species name in current animals list.
-    const output = screen.queryByText(input);
 
-    expect(output).toBeInTheDocument();
-    expect(output).toBeTruthy();
-    expect(output).not.toBeNull();
+    // Sync solution
+    // const output = screen.queryByText(input);
+
+    // expect(output).toBeInTheDocument();
+    // expect(output).toBeTruthy();
+    // expect(output).not.toBeNull();
+
+    // Find with Promise
+    const outputPromise = screen.findByText(input);
+    console.log(outputPromise);
 });
