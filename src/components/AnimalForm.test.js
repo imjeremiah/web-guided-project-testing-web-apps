@@ -7,3 +7,6 @@ test("renders without errors", ()=> {
     render(<AnimalForm/>);
 });
 
+test("when user fills out all animal form inputs and submits, displays species", () => {
+
+})
