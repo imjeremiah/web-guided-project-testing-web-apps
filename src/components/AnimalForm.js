@@ -28,7 +28,7 @@ const AnimalForm = ({ errors, touched, values }) => {
   return (
     <div className="animal-form">
       <form onSubmit={event => handleSubmit(event)}>
-        <label htmlFor="species">Species:</label>
+        <label>Species:</label>
         <input
           id="species"
           type="text"
