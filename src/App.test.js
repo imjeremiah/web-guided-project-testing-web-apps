@@ -13,7 +13,7 @@ test("loads header on mount", ()=> {
     //Act: find the header if it exists
 
     //Query: finds one element and returns null if not found
-    const header = screen.queryByText("Add New Animal");
+    const header = screen.queryByText(/add new animal/i);
 
     //Get: finds one element and fails the test if not found
     // const header = screen.getByText("Add New Animal");
