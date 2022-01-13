@@ -24,11 +24,11 @@ test("when user fills out all animal form inputs and submits, displays species",
 
     //  5. Select our notes.
     //  6. Type in our notes.
-    const notes = screen.getByLabelText(/age:/i);
-    userEvent.type(age, "3");
-
+    const notes = screen.getByLabelText(/notes:/i);
+    userEvent.type(notes, "this is a good note.");
 
     //  7. click our submit button.
+    const button = screen.getByRole("button");
 
     //Assert: 
     //Shows our species name in current animals list.
