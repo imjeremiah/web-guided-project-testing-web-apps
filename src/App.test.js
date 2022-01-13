@@ -16,7 +16,9 @@ test("loads header on mount", ()=> {
     const header = screen.queryByText("Add New Animal");
 
 
-    //
+    //Get: finds one element and fails the test if not found
+    // const header = screen.getByText("Add New Animal");
+
     //Assert: verify that the header exists
     // expect(header).toBeInTheDocument();
 });
