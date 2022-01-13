@@ -23,7 +23,6 @@ const AnimalForm = ({ errors, touched, values }) => {
       id: Date.now()
     };
     setAnimals([...animals, newAnimal]);
-    console.log(animals);
   };
 
   return (
