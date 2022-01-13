@@ -28,5 +28,5 @@ test("loads header on mount", ()=> {
     const returns = [1,2,3,4,2];
     expect(header).toBeInTheDocument();
     expect(header).toBeTruthy();
-    expect(header).toHaveTextContent("Add New Animal");
+    expect(header).toHaveTextContent(/Add New Animal/i);
 });
