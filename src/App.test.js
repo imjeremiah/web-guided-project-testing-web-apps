@@ -6,3 +6,6 @@ test("renders without error", ()=> {
     render(<App/>);
 });
 
+test("loads header on mount", ()=> {
+    
+});
