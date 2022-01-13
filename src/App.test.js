@@ -13,7 +13,7 @@ test("loads header on mount", ()=> {
     //Act: find the header if it exists
 
     //Query: finds one element and returns null if not found
-    const header = screen.queryByText(/add new animal/i);
+    const header = screen.queryByTestId("head");
 
     //Get: finds one element and fails the test if not found
     // const header = screen.getByText("Add New Animal");
@@ -23,5 +23,5 @@ test("loads header on mount", ()=> {
     // const header = screen.findByText("Add New Animal");
     
     //Assert: verify that the header exists
-    // expect(header).toBeInTheDocument();
+    expect(header).toBeInTheDocument();
 });
