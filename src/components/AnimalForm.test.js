@@ -34,5 +34,6 @@ test("when user fills out all animal form inputs and submits, displays species",
     //Assert: 
     //Shows our species name in current animals list.
     const output = screen.queryByText("feline");
-    console.log(output);
+    expect(output).toBeInTheDocument();
+    expect(output).toBeTruthy();
 });
