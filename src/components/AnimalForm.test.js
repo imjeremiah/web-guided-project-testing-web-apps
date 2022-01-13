@@ -51,7 +51,9 @@ test("when user fills out all animal form inputs and submits, displays species",
     //     expect(output).not.toBeNull();
     // });
 
+    // Find with async / await way
     const output = await screen.findByText(input);
+    console.log(output);
     expect(output).toBeInTheDocument();
     expect(output).toBeTruthy();
     expect(output).not.toBeNull();
