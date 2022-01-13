@@ -17,6 +17,7 @@ test("when user fills out all animal form inputs and submits, displays species",
     userEvent.type(species, "feline");
 
     //  2. Type in our species.
+    const age = screen.getByLabelText(/age:'i');
     //  3. Select the age input.
     //  4. Type in our age.
     //  5. Select our notes.
