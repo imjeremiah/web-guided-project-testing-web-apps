@@ -29,6 +29,7 @@ test("when user fills out all animal form inputs and submits, displays species",
 
     //  7. click our submit button.
     const button = screen.getByRole("button");
+    userEvent.click(button);
 
     //Assert: 
     //Shows our species name in current animals list.
