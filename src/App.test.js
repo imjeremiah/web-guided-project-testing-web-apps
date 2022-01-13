@@ -8,6 +8,8 @@ test("renders without error", ()=> {
 
 test("loads header on mount", ()=> {
     //Arrange: render App to the screen
+    render(<App/>);
+    
     //Act: find the header if it exists
     //Assert: verify that the header exists
 });
