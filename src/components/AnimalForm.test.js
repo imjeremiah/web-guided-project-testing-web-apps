@@ -57,4 +57,11 @@ test("when user fills out all animal form inputs and submits, displays species",
     // expect(output).toBeTruthy();
     // expect(output).not.toBeNull();
 
+    waitFor(async ()=> {
+        const output = screen.queryByText(input);
+
+        expect(output).toBeInTheDocument();
+        expect(output).toBeTruthy();
+        expect(output).not.toBeNull();
+    });
 });
