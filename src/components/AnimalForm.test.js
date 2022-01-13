@@ -8,5 +8,9 @@ test("renders without errors", ()=> {
 });
 
 test("when user fills out all animal form inputs and submits, displays species", () => {
-
-})
+    //Arrange: render AnimalForm
+    render(<AnimalForm/>);
+    
+    //Act:
+    //Assert:
+});
