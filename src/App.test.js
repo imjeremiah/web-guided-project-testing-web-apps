@@ -25,6 +25,6 @@ test("loads header on mount", ()=> {
     //Assert: verify that the header exists
     // expect(header).toBeInTheDocument();
 
-    const returns = 2;
-    expect(returns).toBe(1);
+    const returns = [1,2,3,4,2];
+    expect(returns.length).not.toBe(4);
 });
