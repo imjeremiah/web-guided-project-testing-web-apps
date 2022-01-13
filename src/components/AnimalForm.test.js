@@ -13,15 +13,21 @@ test("when user fills out all animal form inputs and submits, displays species",
 
     //Act: Do a complete submission.
     //  1. Select the species input.
+    //  2. Type in our species.
     const species = screen.getByLabelText(/species:/i);
     userEvent.type(species, "feline");
 
-    //  2. Type in our species.
-    const age = screen.getByLabelText(/age:'i');
     //  3. Select the age input.
     //  4. Type in our age.
+    const age = screen.getByLabelText(/age:/i);
+    userEvent.type(age, "3");
+
     //  5. Select our notes.
     //  6. Type in our notes.
+    const notes = screen.getByLabelText(/age:/i);
+    userEvent.type(age, "3");
+
+
     //  7. click our submit button.
 
     //Assert: 
