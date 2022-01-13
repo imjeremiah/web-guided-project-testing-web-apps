@@ -9,7 +9,10 @@ test("renders without error", ()=> {
 test("loads header on mount", ()=> {
     //Arrange: render App to the screen
     render(<App/>);
-    
+
     //Act: find the header if it exists
+    const header = screen.queryByText("Add New Animal");
+    console.log(header);
+
     //Assert: verify that the header exists
 });
