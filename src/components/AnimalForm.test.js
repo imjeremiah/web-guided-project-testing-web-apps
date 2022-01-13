@@ -15,7 +15,7 @@ test("when user fills out all animal form inputs and submits, displays species",
     //  1. Select the species input.
     const species = screen.getByLabelText(/species:/i);
     console.log(species);
-    
+
     //  2. Type in our species.
     //  3. Select the age input.
     //  4. Type in our age.
