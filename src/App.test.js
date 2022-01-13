@@ -26,5 +26,7 @@ test("loads header on mount", ()=> {
     // expect(header).toBeInTheDocument();
 
     const returns = [1,2,3,4,2];
-    expect(returns.length).not.toBe(4);
+    expect(header).toBeInTheDocument();
+    expect(header).toBeTruthy();
+    expect(header).toHaveTextContent("Add New Animal");
 });
